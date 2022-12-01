@@ -30,7 +30,8 @@ try
         Console.WriteLine($"День недели, который соответствует цифре {num} - это {day}");
     }
     else Console.WriteLine("Вы ввели некорректное число");
-   
+    if (num == 6 || num == 7) Console.WriteLine("выходной день");
+    else Console.WriteLine("будний день");
 }
 catch 
 {
