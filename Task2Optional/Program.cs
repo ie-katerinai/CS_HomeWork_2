@@ -11,7 +11,7 @@ Console.WriteLine("Введите количество программисто�
 try 
 {
     int count = Convert.ToInt32(Console.ReadLine());
-    if (count > 0 && count < 1000)
+    if ((count > 0 && count < 10)||(count > 20 && count <1000))
 {
     string ending="";
     switch (count%10)
@@ -39,6 +39,10 @@ try
     }
     Console.WriteLine($"В комнате {count} {ending}");
 }
+else if (count > 10 && count < 20)
+{
+    Console.WriteLine($"В комнате {count} программистов");
+}
 else
 {
     Console.WriteLine("Вы ввели не верное число");
@@ -48,4 +52,3 @@ catch
 {
     Console.WriteLine("Вы  ввели не числовое значение");
 }
-
