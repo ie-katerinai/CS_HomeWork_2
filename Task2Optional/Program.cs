@@ -11,7 +11,7 @@ Console.WriteLine("Введите количество программисто�
 try 
 {
     int count = Convert.ToInt32(Console.ReadLine());
-    if ((count > 0 && count < 10)||(count > 20 && count <1000))
+    if (count > 0 && count < 1000)
 {
     string ending="";
     switch (count%10)
@@ -35,6 +35,28 @@ try
         case 8: ending="программистов";
         break;
         case 9: ending="программистов";
+        break;
+    }
+
+    switch (count%100)
+    {
+        case 11: ending="программистов";
+        break;
+        case 12: ending="программистов";
+        break;
+        case 13: ending="программистов";
+        break;
+        case 14: ending="программистов";
+        break;
+        case 15: ending="программистов";
+        break;
+        case 16: ending="программистов";
+        break;
+        case 17: ending="программистов";
+        break;
+        case 18: ending="программистов";
+        break;
+        case 19: ending="программистов";
         break;
     }
     Console.WriteLine($"В комнате {count} {ending}");
